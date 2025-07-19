@@ -283,6 +283,6 @@ CREATE TRIGGER on_auth_user_created
   FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
 
 -- Insert some sample data for testing
-INSERT INTO public.schools (name, slug, email, subscription_tier, subscription_status) VALUES
-('Greenwood High School', 'greenwood-high', 'admin@greenwood.edu', 'premium', 'active'),
-('Oak Valley Elementary', 'oak-valley-elem', 'admin@oakvalley.edu', 'basic', 'active');
+-- INSERT INTO public.schools (name, slug, email, subscription_tier, subscription_status) VALUES
+-- ('Greenwood High School', 'greenwood-high', 'admin@greenwood.edu', 'premium', 'active'),
+-- ('Oak Valley Elementary', 'oak-valley-elem', 'admin@oakvalley.edu', 'basic', 'active');

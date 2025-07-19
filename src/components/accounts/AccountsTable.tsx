@@ -163,7 +163,7 @@ export default function AccountsTable() {
                   <Input
                     id="firstName"
                     name="firstName"
-                    placeholder="John"
+                    placeholder="Mohamed"
                     required
                   />
                 </div>
@@ -172,7 +172,7 @@ export default function AccountsTable() {
                   <Input
                     id="lastName"
                     name="lastName"
-                    placeholder="Doe"
+                    placeholder="Khalef"
                     required
                   />
                 </div>
@@ -183,7 +183,7 @@ export default function AccountsTable() {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="john.doe@school.edu"
+                  placeholder="med@ecole.edu"
                   required
                 />
               </div>

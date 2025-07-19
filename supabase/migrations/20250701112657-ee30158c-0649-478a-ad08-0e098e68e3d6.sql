@@ -17,7 +17,7 @@ INSERT INTO public.teachers (
   'Sample Teacher',
   'TCH001',
   'teacher@example.com',
-  '+1234567890',
+  '26544567',
   'Sample Nationality',
   '6cd03fcc-4a0a-48f8-bade-2c88844d368d', -- Using the school_id from your logs
   true
@@ -73,13 +73,13 @@ INSERT INTO public.students (
   group_name,
   is_active
 ) VALUES 
-  ('STU001', 'John', 'Doe', 'john.doe@example.com', 
+  ('STU001', 'Med', 'Khalef', 'med@example.com', 
    (SELECT id FROM public.grade_levels WHERE school_id = '6cd03fcc-4a0a-48f8-bade-2c88844d368d' LIMIT 1),
    '6cd03fcc-4a0a-48f8-bade-2c88844d368d', '1', true),
-  ('STU002', 'Jane', 'Smith', 'jane.smith@example.com', 
+  ('STU002', 'Med', 'Yacoub', 'jane.smith@example.com', 
    (SELECT id FROM public.grade_levels WHERE school_id = '6cd03fcc-4a0a-48f8-bade-2c88844d368d' LIMIT 1),
    '6cd03fcc-4a0a-48f8-bade-2c88844d368d', '1', true),
-  ('STU003', 'Bob', 'Johnson', 'bob.johnson@example.com', 
+  ('STU003', 'Ahmed', 'Benane', 'med@example.com', 
    (SELECT id FROM public.grade_levels WHERE school_id = '6cd03fcc-4a0a-48f8-bade-2c88844d368d' LIMIT 1),
    '6cd03fcc-4a0a-48f8-bade-2c88844d368d', '1', true)
 ON CONFLICT DO NOTHING;

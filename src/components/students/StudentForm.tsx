@@ -64,7 +64,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
           <Input
             id="first_name"
             name="first_name"
-            placeholder="John"
+            placeholder="Moahmed"
             required
           />
         </div>
@@ -73,7 +73,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
           <Input
             id="last_name"
             name="last_name"
-            placeholder="Doe"
+            placeholder="Khalef"
             required
           />
         </div>
@@ -110,7 +110,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
             id="email"
             name="email"
             type="email"
-            placeholder="john.doe@example.com"
+            placeholder="med@example.com"
           />
         </div>
         <div className="space-y-2">
@@ -118,7 +118,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
           <Input
             id="phone"
             name="phone"
-            placeholder="+1234567890"
+            placeholder="34567645"
           />
         </div>
       </div>
@@ -150,7 +150,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
             <Input
               id="parent_name"
               name="parent_name"
-              placeholder="Jane Doe"
+              placeholder="Med Khalef"
             />
           </div>
         </div>
@@ -161,7 +161,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
               id="parent_email"
               name="parent_email"
               type="email"
-              placeholder="jane.doe@example.com"
+              placeholder="med@example.com"
             />
           </div>
           <div className="space-y-2">
@@ -169,7 +169,7 @@ export default function StudentForm({ onSubmit, grades, isLoading }: StudentForm
             <Input
               id="parent_phone"
               name="parent_phone"
-              placeholder="+1234567890"
+              placeholder="34543456"
             />
           </div>
         </div>
