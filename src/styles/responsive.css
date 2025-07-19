@@ -1,0 +1,70 @@
+/* Enhanced responsiveness utilities */
+.responsive-grid {
+  @apply grid gap-4;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.responsive-dialog {
+  @apply max-w-[95vw] sm:max-w-lg md:max-w-2xl lg:max-w-4xl;
+}
+
+.responsive-table {
+  @apply overflow-x-auto;
+}
+
+.responsive-table table {
+  @apply min-w-full;
+}
+
+.responsive-form {
+  @apply space-y-4 sm:space-y-6;
+}
+
+.responsive-form .form-row {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.responsive-button-group {
+  @apply flex flex-col sm:flex-row gap-2;
+}
+
+.responsive-stats-grid {
+  @apply grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.responsive-chart-grid {
+  @apply grid gap-4 grid-cols-1 lg:grid-cols-7;
+}
+
+/* Mobile-first approach for complex layouts */
+@media (max-width: 640px) {
+  .mobile-stack {
+    @apply flex flex-col space-y-2;
+  }
+  
+  .mobile-full-width {
+    @apply w-full;
+  }
+  
+  .mobile-hide {
+    @apply hidden;
+  }
+  
+  .mobile-text-sm {
+    @apply text-sm;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-compact {
+    @apply px-4 py-2;
+  }
+}
+
+/* Desktop optimizations */
+@media (min-width: 1025px) {
+  .desktop-sidebar {
+    @apply w-64 lg:w-72;
+  }
+}
