@@ -73,13 +73,13 @@ INSERT INTO public.students (
   group_name,
   is_active
 ) VALUES 
-  ('STU001', 'Med', 'Khalef', 'med@example.com', 
+  ('STU001', 'Med', 'Khalef', 'medm@example.com', 
    (SELECT id FROM public.grade_levels WHERE school_id = '6cd03fcc-4a0a-48f8-bade-2c88844d368d' LIMIT 1),
    '6cd03fcc-4a0a-48f8-bade-2c88844d368d', '1', true),
-  ('STU002', 'Med', 'Yacoub', 'jane.smith@example.com', 
+  ('STU002', 'Med', 'Yacoub', 'medh@example.com', 
    (SELECT id FROM public.grade_levels WHERE school_id = '6cd03fcc-4a0a-48f8-bade-2c88844d368d' LIMIT 1),
    '6cd03fcc-4a0a-48f8-bade-2c88844d368d', '1', true),
-  ('STU003', 'Ahmed', 'Benane', 'med@example.com', 
+  ('STU003', 'Ahmed', 'Benane', 'meds@example.com', 
    (SELECT id FROM public.grade_levels WHERE school_id = '6cd03fcc-4a0a-48f8-bade-2c88844d368d' LIMIT 1),
    '6cd03fcc-4a0a-48f8-bade-2c88844d368d', '1', true)
 ON CONFLICT DO NOTHING;

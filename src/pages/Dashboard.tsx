@@ -270,15 +270,15 @@ export default function Dashboard() {
       color: 'purple' as const,
       trend: { value: 0, isPositive: true }
     },
-    {
-      title: t('dashboard.absenceRate'),
-      value: statsLoading ? '...' : `${statsData?.absenceRate || 0}%`,
-      icon: Calendar,
-      description: t('dashboard.absenceRate'),
-      roles: ['admin', 'academic_director', 'supervisor', 'teacher'],
-      color: 'red' as const,
-      trend: { value: -1.5, isPositive: false }
-    },
+    // {
+    //   title: t('dashboard.absenceRate'),
+    //   value: statsLoading ? '...' : `${statsData?.absenceRate || 0}%`,
+    //   icon: Calendar,
+    //   description: t('dashboard.absenceRate'),
+    //   roles: ['admin', 'academic_director', 'supervisor', 'teacher'],
+    //   color: 'red' as const,
+    //   trend: { value: -1.5, isPositive: false }
+    // },
     {
       title: t('dashboard.grades'),
       value: statsLoading ? '...' : (statsData?.gradesCount || 8),
@@ -297,15 +297,15 @@ export default function Dashboard() {
       color: 'green' as const,
       trend: { value: 12.3, isPositive: true }
     },
-    {
-      title: t('dashboard.averageMarks'),
-      value: statsLoading ? '...' : `${statsData?.averageMark || 0}/20`,
-      icon: Calculator,
-      description: t('dashboard.averageMarks'),
-      roles: ['admin', 'academic_director', 'teacher'],
-      color: 'purple' as const,
-      trend: { value: 3.2, isPositive: true }
-    },
+    // {
+    //   title: t('dashboard.averageMarks'),
+    //   value: statsLoading ? '...' : `${statsData?.averageMark || 0}/20`,
+    //   icon: Calculator,
+    //   description: t('dashboard.averageMarks'),
+    //   roles: ['admin', 'academic_director', 'teacher'],
+    //   color: 'purple' as const,
+    //   trend: { value: 3.2, isPositive: true }
+    // },
     {
       title: t('dashboard.myAverage'),
       value: studentStatsLoading ? '...' : `${studentStats?.currentAverage || 0}/20`,
@@ -315,15 +315,15 @@ export default function Dashboard() {
       color: 'blue' as const,
       trend: { value: 2.1, isPositive: true }
     },
-    {
-      title: t('dashboard.myAbsences'),
-      value: studentStatsLoading ? '...' : `${studentStats?.absenceRate || 0}%`,
-      icon: Calendar,
-      description: t('dashboard.myAbsences'),
-      roles: ['student'],
-      color: studentStats?.absenceRate && studentStats.absenceRate <= 5 ? 'green' as const : 'red' as const,
-      trend: { value: -1.5, isPositive: false }
-    },
+    // {
+    //   title: t('dashboard.myAbsences'),
+    //   value: studentStatsLoading ? '...' : `${studentStats?.absenceRate || 0}%`,
+    //   icon: Calendar,
+    //   description: t('dashboard.myAbsences'),
+    //   roles: ['student'],
+    //   color: studentStats?.absenceRate && studentStats.absenceRate <= 5 ? 'green' as const : 'red' as const,
+    //   trend: { value: -1.5, isPositive: false }
+    // },
     {
       title: t('dashboard.myBalance'),
       value: studentStatsLoading ? '...' : `${studentStats?.balance || 0} MRU`,
